@@ -100,6 +100,7 @@ end
 def play(board)
   turn_count(board)
   turn(board)
+  over?(board)
   if !over?(board)
     turn(board)
   end
