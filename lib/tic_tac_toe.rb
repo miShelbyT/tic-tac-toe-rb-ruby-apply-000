@@ -101,13 +101,11 @@ def play(board)
   over?(board)
   turn_count(board)
   turn(board)
-  if !over?(board)
-    turn(board)
-  end
   if draw?(board)
     puts "Cat's Game!"
   elsif won?(board)
     winner(board) == "X" || winner(board) == "O"
       puts "Congratulations " "#{winner(board)}!"
+  else turn(board)
   end
 end
