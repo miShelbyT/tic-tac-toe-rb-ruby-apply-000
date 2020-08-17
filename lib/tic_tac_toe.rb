@@ -98,8 +98,8 @@ def winner(board)
 end
 
 def play(board)
-  turn(board)
   turn_count(board)
+  turn(board)
   over?(board)
   draw?(board)
   won?(board)
