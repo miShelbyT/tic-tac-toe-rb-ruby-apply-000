@@ -99,8 +99,8 @@ end
 
 def play(board)
   turn_count(board)
-  turn(board)
   over?(board)
+  turn(board)
   if !over?(board)
     turn(board)
   end
