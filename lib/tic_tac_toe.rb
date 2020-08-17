@@ -103,13 +103,10 @@ def play(board)
   if !over?(board)
     turn(board)
   end
-  draw?(board)
-  won?(board)
-  if won?(board)
+  if draw?(board)
+    puts "Cat's Game!"
+  elsif won?(board)
     winner(board) == "X" || winner(board) == "O"
       puts "Congratulations " "#{winner(board)}!"
-  elsif draw?(board)
-    puts "Cat's Game!"
-  else turn(board)
   end
 end
