@@ -98,7 +98,7 @@ def winner(board)
 end
 
 def play(board)
-    over?(board) 
+    over?(board)
     if won?(board)
       winner(board) == "X" || winner(board) == "O"
       puts "Congratulations " "#{winner(board)}!"
