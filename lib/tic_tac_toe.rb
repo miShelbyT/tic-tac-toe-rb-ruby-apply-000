@@ -99,6 +99,7 @@ end
 
 def play(board)
   over?(board)
+  draw?(board)
   turn_count(board)
   turn(board)
   if draw?(board)
